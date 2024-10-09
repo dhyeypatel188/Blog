@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookirparser());
 app.use("/upload", express.static(__dirname + "/upload"));
 mongoose.connect(
-  "mongodb+srv://pateldhyey649:Fyd8kFl9PNW6wMcm@blog.fcut6.mongodb.net/?retryWrites=true&w=majority&appName=Blog"
+  "mongodb+srv://pateldhyey649:Fyd8kFl9PNW6wMcm@blog.fcut6.mongodb.net/"
 );
 
 app.post("/register", async (req, res) => {
