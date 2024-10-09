@@ -15,7 +15,7 @@ const { assert } = require("console");
 const salt = bcrypt.genSaltSync(10);
 const secret = "sasdasd";
 
-app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
+app.use(cors({ credentials: true, origin: true }));
 app.use(express.json());
 app.use(cookirparser());
 app.use("/upload", express.static(__dirname + "/upload"));
